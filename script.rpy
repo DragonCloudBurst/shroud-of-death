@@ -126,6 +126,80 @@ label start:
     hide cairn_happy
     hide makoto_worry
     scene gazebo with fade 
+    pause 2.0
+    show cairn_normal at left
+
+    # scene 2 start
+    c "I appreciate the invitation. I have never been offered something like this before."
+
+    show makoto_smile at right, makoto_size
+
+    m "Really? Never? That is surprising."
+    "Cairn huffs."
+    c "You must understand that this is far from my usual activities."
+    m "Well, what are your usual activities? Care to tell me?"
+    "Cairn goes quiet."
+    c "I cannot tell you."
+    "Makoto sighs as she prepares the tea."
+    m "I cannot force you to tell me anything. I respect privacy."
+    "The pair are silent for several moments while the tea soaks. Makoto is the first to speak."
+    m "Have you ever had matcha before?"
+    c "What is this 'matcha' you speak of?"
+    "Makoto laughs softly in spite of the tension in the air. She picks up the teapot and carefully serves a small portion of the drink into two cups-
+    one for herself and one for Cairn."
+    m "It is a form of tea, often used for ceremonies. I apologize that I do not have any other type of tea on hand. Matcha can be a bit overwhelming
+    if you have never drank it before."
+    c "I can handle myself. Worry not."
+    m "I see. Then, here is your cup."
+    "Makoto begins taking small sips from her cup, as Cairn dives their snout in and takes a huge gulp all at once."
+    
+    hide makoto_normal
+    show makoto_shock at right, makoto_size
+
+    m "Oh, that's- You are not supposed to-"
+
+    hide cairn_normal
+    show cairn_shocked at left
+
+    "Before she can finish her warning, Cairn reels back, coughing violently."
+    m "I told you it was strong..."
+    "Cairn hacks and sputters, trying to regain their composure."
+
+    hide cairn_shocked
+    show cairn_worried at left
+
+    c "It's... lovely. The flavor is quite... unique."
+    "They cough again, and their voice sounds strained."
+    c "It is hotter than I aniticipated."
+
+    hide makoto_shock
+    show makoto_worry at right, makoto_size
+
+    m "Are you okay? I can get you some clean water if needed."
+    c "No, no. I am fine. I am alright."
+    "Cairn shakes their body, causing their fur to fluff out. They clear their throat and take a seat once more."
+    m "If you wish to try some more, take small sips. Do not drink it all at once. It is very hot and has a strong taste."
+    c "...Right. I knew that."
+    c "With their pride bruised, Cairn delicately leans down and takes a much smaller mouthful of the matcha. They pause for several moments,
+    then swallow it down."
+
+    hide cairn_worried
+    show cairn_happy at left
+
+    c "It is... quite nice when I drink it like this."
+    "Cairn almost can't believe what they're about to say, but they say it anyway."
+    c "Thank you very much."
+
+    hide makoto_worry
+    show makoto_smile at right, makoto_size
+
+    m "I'm quite glad you like it. I apologize for not warning you sooner; I thought you would know."
+    "If Cairn could blush in embarassment, they would. Instead, their tail twitches back and forth."
+    c "I did know. Clearly."
+    "Makoto smiles softly."
+    m "Right. Of course you did."
+
+
 
     # This ends the game.
     return
