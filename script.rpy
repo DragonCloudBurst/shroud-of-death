@@ -85,6 +85,47 @@ label start:
     show cairn_normal at left
 
     c "That is not so. It simply surprises me. Enraged I am not."
+    m "I see."
+
+    hide makoto_worry
+    show makoto_shock at right, makoto_size
+
+    m "You are not going to eat me, are you?! I have heard stories of dangers in these parts, but I had never thought them to be true."
+    "Cairn scoffs, incredulous."
+    c "Such a thing is unfathomable. I am not a killer, nor a predator."
+    "They notice that Makoto is shaking a bit in spite of their words, and they sigh."
+    c "I will not harm you. I can promise you that."
+    c "Why are you still shaking? You have been told to be calm."
+    pause 1.0
+    "The elderly woman shudders a bit and takes a deep breath to slow her thoughts."
+    m "I apologize. I am just nervous. I have never met anyone like you before."
+    m "I am not sure what to think of you."
+    "Cairn nods slowly, yet still feels a bit slighted. They are not used to their commands not being immediately obeyed."
+    "Then again, they aren't used to humans, either."
+    c "Is it really so common for beasts to speak as I do? You do not seem to be put off guard by that in particular."
+    "Makoto hesitates for a moment."
+
+    hide makoto_shock
+    show makoto_worry at right, makoto_size
+
+    m "I have not seen it before myself, but my fellow miko have told me of such things occurring. I trust them with my life, so I would never
+    doubt their word."
+    c "...I see."
+    "Cairn's tail swishes impatiently as they consider what to do next. They could just leave... but that doesn't seem like the right thing to do."
+    "Before they can finish deliberating, Makoto spares them the need to make a concrete deicision."
+    m "If you would like, you may walk back with me to our shrine. I have some tea that I could make for you. Tea is... a measure of gentility."
+    m "However, if you do not wish to have any, I will not hold it against you."
+    "Cairn blinks once, then twice. No one had ever invited them to visit, much less a human, much less for a serving of tea. The absurdity of the moment
+    almost silences them."
+
+    hide cairn_normal
+    show cairn_happy at left
+
+    c "I accept."
+
+    hide cairn_happy
+    hide makoto_worry
+    scene gazebo with fade 
 
     # This ends the game.
     return
