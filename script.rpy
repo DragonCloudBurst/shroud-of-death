@@ -129,7 +129,9 @@ label start:
     pause 2.0
     show cairn_normal at left
 
+    ###############################
     # scene 2 start
+    ###############################
     c "I appreciate the invitation. I have never been offered something like this before."
 
     show makoto_smile at right, makoto_size
@@ -199,6 +201,108 @@ label start:
     "Makoto smiles softly."
     m "Right. Of course you did."
 
+    hide cairn_happy
+    hide makoto_smile
+    scene shrine with fade
+    pause 2.0
+    show makoto_smile at right, makoto_size
+
+    ###############################
+    # scene 3 start 
+    ###############################
+
+    m "I am surprised that you came again, but I am happy for it."
+    m "I never did get your name. Do you mind telling me?"
+
+    show cairn_normal at left
+
+    "The deity hesitates before giving their answer."
+    c "I am... Cairn. It is not my true name, yet it is the only somewhat-accurate version that can be pronounced by humans."
+    "Makoto nods slowly."
+    m "I see. Ca... Cairn."
+
+    hide makoto_smile
+    show makoto_worry at right, makoto_size
+
+    "She stumbles over the syllables a bit, and looks noticeably embarassed."
+    m "That is not a Japanese name. Are you not from here?"
+
+    hide cairn_normal
+    show cairn_worried at left
+
+    "Cairn starts to get the feeling that Makoto may know more than she lets on."
+    c "That is hard to answer. I cannot say yes, nor can I say no. It is... complicated."
+    m "I apologize. I have intruded."
+    c "No, it is alright. It is a reasonable question."
+    "Cairn sighs softly."
+    c "I wish I could tell you more, Makoto."
+    "Makoto shrugs, shaking her head."
+
+    hide makoto_worry
+    show makoto_smile at right, makoto_size
+
+    m "It is alright. I am okay with not knowing everything."
+    "A faint feeling of guilt gnaws at Cairn even so."
+    m "Come, I would like to show you our gardens. Walk with me, if you do not mind?"
+
+    hide cairn_worried
+    show cairn_happy at left
+
+    c "I would very much like to."
+    
+    pause 2.0
+
+    "Makoto leads Cairn down a path off to the side of the shrine, and they follow her with vague caution."
+    m "Look, Cairn. Is it not quite pretty?"
+    "Cairns looks to follow Makoto's gaze, and their jaw nearly drops at the sight."
+
+    hide cairn_happy
+    show cairn_shocked at left
+
+    "The flowers are stunning, yes, but what really catches their interest is one of the statues that they can see from here."
+    "The stone sculpture is a very clear and unmistakable representation of their mentor."
+    "How was this possible? Cem was well-known among the gods for being reclusive and antisocial, even more so than themself."
+    "So how do these humans know of its existence, much less have created a strikingly accurate statue of it?"
+    
+    hide makoto_smile
+    show makoto_worry at right, makoto_size
+
+    m "Are you alright? You look as though you have seen an obake. Should I be worried?"
+
+    hide cairn_shocked
+    show cairn_worried at left
+
+    c "I... I am fine. Do not worry about me. Just... the flowers are very beautiful. It has been a long time since I have seen such beauty
+    in human territory."
+    "Makoto nods. The gleam in her eyes shows she seems to have the inkling that Cairn isn't telling the full truth, but she doesn't press the matter."
+    
+    hide makoto_worry
+    show makoto_smile at right, makoto_size
+
+    m "I am very glad you like our humble garden. We do not have much, but we miko take great pride in caring for our garden."
+    c "It is very lovely and well-tended. I am used to seeing flowers, but I am not used to seeing such neat and tidy plants."
+    "Makoto's smile widens."
+    m "That is great to hear. It makes me happy to know that you can appreciate our hard work."
+    "Despite their lingering shock, Cairn nods and tilts their head forwards in acknowledgement."
+
+    hide cairn_worried
+    show cairn_happy at left
+
+    c "Thank you very much for showing me, Makoto. I appreciate it."
+    "The pair stand in silence for a while, simply admiring the flowers."
+    "In moments like these, time seems to stand still."
+
+    hide makoto_smile
+    hide cairn_happy
+    scene gazebo with fade
+    pause 2.0
+
+    ###############################
+    # scene 4 start 
+    ###############################
+
+    show cairn_normal at left
+    show makoto_smile at right, makoto_size
 
 
     # This ends the game.
