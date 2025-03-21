@@ -304,6 +304,5 @@ label start:
     show cairn_normal at left
     show makoto_smile at right, makoto_size
 
-
     # This ends the game.
     return
