@@ -20,10 +20,6 @@ transform makoto_size:
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
     scene forest
 
     "Sometimes, even gods feel aimless."
@@ -295,14 +291,68 @@ label start:
     hide makoto_smile
     hide cairn_happy
     scene gazebo with fade
-    pause 2.0
+    pause 3.0
 
     ###############################
     # scene 4 start 
     ###############################
 
-    show cairn_normal at left
+    show cairn_happy at left
     show makoto_smile at right, makoto_size
+
+    m "It is lovely to see you again, Cairn."
+    m "It wasn't long since your last visit. You typically visit once a week or so, but I just saw you two days ago."
+    m "To see you again so soon is a surprise, but a pleasant one."
+    c "Yes, well... if I'm being honest, I've been a little lonely lately, and I wanted to see you again. I don't have many others to talk to."
+    m "Well, I'm glad we're friends then."
+    m "But, I have a sense that is not the only reason you've come, is it?"
+
+    hide cairn_happy
+    show cairn_worried at left
+
+    c "How could you tell?"
+    m "I have become more perceptive with age. You do not get to 67 years of life without being at least a little wise."
+    c "Well... you are correct. I wanted to let you know that I have seen some unrest near the forest within the past. It's some kind of human group.
+    They were yelling amongst themselves and seemed excited, but their intentions did not seem well. They spoke in a tongue I did not recognize;
+    I expect it may have been a form of secret code. Even the sight of them brought unease upon me."
+    c "I believe you and the other miko should be very careful for the next few days. They were carrying weapons."
+    c "I fear for your safety, and the safety of the forest as a whole."
+
+    hide makoto_smile
+    show makoto_worry at right, makoto_size
+
+    "Makoto is silent for several moments."
+    m "I understand why you are concerned about this."
+    m "I believe I have heard of a similar group before a couple of years ago. But, nothing ever came of it."
+    m "You are a little too worried, I think, but I appreciate the warning."
+    m "Not many outsiders even know our shrine is here. This location was chosen for us for a reason: its seclusion and safety."
+
+    hide makoto_worry
+    show makoto_smile at right, makoto_size
+
+    m "Now, I do happen to have some leftover teriyaki soba from our lunch earlier. Would you like some?"
+    m "I saved it just in case you stopped by."
+
+    hide cairn_worried
+    show cairn_happy
+
+    c "I'd love to partake."
+    c "You're correct. I do worry too much. But at least I can rest easy in that you have been alerted."
+    m "It's not good to worry too much, but it is good to look out for the safety for others. All in moderation."
+    m "Here, I will go fetch the soba. Wait for me here."
+
+    hide cairn_happy
+    hide makoto_smile
+    pause 3.0
+
+
+    ###############################
+    # scene 5 start
+    ###############################
+
+
+
+
 
     # This ends the game.
     return
