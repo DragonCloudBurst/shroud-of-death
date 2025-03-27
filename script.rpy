@@ -5,7 +5,8 @@
 
 define c = Character("Cairn", color="#d65d5b")
 define m = Character("Makoto", color="#e4439c")
-
+define w1 = Character("Eri", color="#1c662544")
+define w2 = Character("Akiko", color="#1c662544")
 
 transform left:
     xalign 0.1 yalign 1.0
@@ -312,9 +313,10 @@ label start:
 
     c "How could you tell?"
     m "I have become more perceptive with age. You do not get to 67 years of life without being at least a little wise."
-    c "Well... you are correct. I wanted to let you know that I have seen some unrest near the forest within the past. It's some kind of human group.
-    They were yelling amongst themselves and seemed excited, but their intentions did not seem well. They spoke in a tongue I did not recognize;
-    I expect it may have been a form of secret code. Even the sight of them brought unease upon me."
+    c "Well... you are correct. I wanted to let you know that I have seen some unrest near the forest within the past. It's some kind of human group."
+    c "They were yelling amongst themselves and seemed excited, but their intentions did not seem well. They spoke in a tongue I did not recognize;
+    I expect it may have been a form of secret code."
+    c "Even the sight of them brought unease upon me."
     c "I believe you and the other miko should be very careful for the next few days. They were carrying weapons."
     c "I fear for your safety, and the safety of the forest as a whole."
 
@@ -334,7 +336,7 @@ label start:
     m "I saved it just in case you stopped by."
 
     hide cairn_worried
-    show cairn_happy
+    show cairn_happy at left
 
     c "I'd love to partake."
     c "You're correct. I do worry too much. But at least I can rest easy in that you have been alerted."
@@ -343,13 +345,58 @@ label start:
 
     hide cairn_happy
     hide makoto_smile
+    scene interior with fade
     pause 3.0
-
 
     ###############################
     # scene 5 start
     ###############################
 
+    show makoto_smile at left, makoto_size
+    m "Welcome, it is nice to meet you. Thank you for choosing our shrine for your private ceremony; it means a lot to us."
+    w1 "No, thank you! My wife and I appreciate the opportunity to even have a private tea ceremony. We never thought we would see the day."
+    w2 "That's right, miss Makoto. Thank you for your time."
+    "Makoto blushes slightly and begins preparing the matcha."
+    m "Still, we are honored. Due to our rural location, we do not receive as many visitors as more urban shrines."
+    w2 "That's a shame. It's quite beautiful here."
+    m "Thank you! I and the other miko take much pride in maintaining our garden and facilities."
+    "Makoto's hand moves to the handle of the teapot. Just before she can lift it, a raw and blood-curdling scream can be heard from not far away at all."
+
+    hide makoto_smile
+    show makoto_shock at left, makoto_size
+
+    m "What was that?!"
+    "Her eyes dart wildly around the room. The two worshippers look frightened."
+    "For several moments, the shrine maiden debates what she should do- then, she remembers Cairn's words from the other day."
+
+    hide makoto_shock
+    show makoto_worry at left, makoto_size
+
+    "Makoto gets to her feet, gesturing for the worshippers to do the same."
+    w1 "What's happ-"
+    m "Be silent."
+    w1 "..."
+    "Makoto speaks in hushed tones as she steers the couple to the back door."
+    m "You need to get out of here. Now."
+    w2 "But-"
+    "Before the woman can finish her sentence, a flaming torch is chucked just inside the door."
+
+    hide makoto_worry
+    show makoto_shock at right, makoto_size
+
+    "Acting quickly, before the couple can cry out in shock, Makoto shoves them as far away from the doorframe as she can,"
+    "Just as the floor at her feet sparks and burns."
+    w1 "Oh my god! Are you okay?!"
+    m "RUN! NOW!"
+    "The two women turn tail and flee without her having to ask a second time. Panting, Makoto's gaze darts down to the floorboards in front of her to see that
+    the flames are already far too high for her to pass through."
+    "On closer glance, it looks like the floor has been smeared with some kind of flammable substance."
+    "This was clearly planned and premeditated."
+    "Shaking and coughing, Makoto stumbles backwards and flees in the opposite direction towards the main hall."
+    
+    scene wooden_bg with fade
+
+    
 
 
 
