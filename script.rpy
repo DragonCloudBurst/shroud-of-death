@@ -17,6 +17,9 @@ transform right:
 transform makoto_size:
     zoom 1.3
 
+transform death_scene:
+    zoom 4.0
+
 # The game starts here.
 
 label start:
@@ -394,9 +397,46 @@ label start:
     "This was clearly planned and premeditated."
     "Shaking and coughing, Makoto stumbles backwards and flees in the opposite direction towards the main hall."
     
+    hide makoto_shock
+    show makoto_worry at left, makoto_size
     scene wooden_bg with fade
 
+    "Makoto flees to the main hall as fast as her legs will carry her, only to discover that it, too, is engulfed in flames."
+    "She tries to take in a deep breath to steady herself as she navigates carefully around the flames, only to choke on the smoke."
+    m "Kamisama, please... protect us..."
+    "Just as Makoto rounds the corner to find the exit, the ceiling groans loudly."
+    "Makoto's gaze snaps upward- but it's already too late. The shrine is collapsing in on itself..."
+    "And she's in its way."
+
+    hide makoto_worry
+    show makoto_shock at right, makoto_size
+
+    "She tries to lunge forward as far as she can, but she's just not fast enough, and one of the wooden support beams falls on her legs."
+    "A shriek of pain and fear tears from Makoto's throat. She tries and fails to shrug the beams off of her."
+    "Desperately, sobbing, Makoto digs her palms into the wooden floor in front of her, attempting to drag herself out from under the heavy beams."
+    "All she manages to do is drag splinters into her palms."
+    m "Please! Kamisama! Hear my prayer!"
+    "The flames encroach further."
+    "Panting hard, Makoto's eyes dart around wildly. Her vision blurs from the tears in her eyes."
+    m "Please..."
+
+    hide makoto_shock
+    show makoto_resolute at right, makoto_size
+
+    m "Please."
+    "After a while, she stops struggling."
+    "After a while, she stops crying."
+    "The flames grow closer and closer, and the heat is starting to become unbearable."
+    m "Cairn. I'm sorry."
+    m "I..."
+    m "I don't want to die."
+
+    hide makoto_resolute
+    pause 3.0
+    scene makoto_death with fade 
+    pause 5.0
     
+
 
 
 
