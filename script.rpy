@@ -5,8 +5,8 @@
 
 define c = Character("Cairn", color="#d65d5b")
 define m = Character("Makoto", color="#e4439c")
-define w1 = Character("Eri", color="#1c662544")
-define w2 = Character("Akiko", color="#1c662544")
+define w1 = Character("Eri", color="#000000")
+define w2 = Character("Akiko", color="#000000")
 
 transform left:
     xalign 0.1 yalign 1.0
@@ -51,6 +51,7 @@ label start:
 
     hide cairn_worried
     show cairn_shocked at left
+    play sound "Nature Friend Mage Effort A.wav"
 
     c "Halt! Who goes there?"
     "Cairn glances around wildly for several moments before their eyes finally come to rest on a lady in a yukata picking flowers."
@@ -92,6 +93,9 @@ label start:
 
     m "You are not going to eat me, are you?! I have heard stories of dangers in these parts, but I had never thought them to be true."
     "Cairn scoffs, incredulous."
+
+    play sound "Nature Friend Mage Effort A.wav"
+
     c "Such a thing is unfathomable. I am not a killer, nor a predator."
     "They notice that Makoto is shaking a bit in spite of their words, and they sigh."
     c "I will not harm you. I can promise you that."
@@ -121,6 +125,8 @@ label start:
     hide cairn_normal
     show cairn_happy at left
 
+    play sound "Nature Friend Mage Happy B.wav"
+
     c "I accept."
 
     hide cairn_happy
@@ -138,6 +144,9 @@ label start:
 
     m "Really? Never? That is surprising."
     "Cairn huffs."
+
+    play sound "Nature Friend Mage Effort A.wav"
+
     c "You must understand that this is far from my usual activities."
     m "Well, what are your usual activities? Care to tell me?"
     "Cairn goes quiet."
@@ -164,6 +173,9 @@ label start:
     show cairn_shocked at left
 
     "Before she can finish her warning, Cairn reels back, coughing violently."
+
+    play sound "Nature Friend Mage Surprise B.wav"
+
     m "I told you it was strong..."
     "Cairn hacks and sputters, trying to regain their composure."
 
@@ -172,6 +184,9 @@ label start:
 
     c "It's... lovely. The flavor is quite... unique."
     "They cough again, and their voice sounds strained."
+
+    play sound "Nature Friend Mage Surprise B.wav"
+
     c "It is hotter than I aniticipated."
 
     hide makoto_shock
@@ -247,6 +262,7 @@ label start:
 
     hide cairn_worried
     show cairn_happy at left
+    play sound "Nature Friend Mage Happy B.wav"
 
     c "I would very much like to."
     
@@ -307,6 +323,9 @@ label start:
     m "It is lovely to see you again, Cairn."
     m "It wasn't long since your last visit. You typically visit once a week or so, but I just saw you two days ago."
     m "To see you again so soon is a surprise, but a pleasant one."
+
+    play sound "Nature Friend Mage Happy B.wav"
+
     c "Yes, well... if I'm being honest, I've been a little lonely lately, and I wanted to see you again. I don't have many others to talk to."
     m "Well, I'm glad we're friends then."
     m "But, I have a sense that is not the only reason you've come, is it?"
@@ -340,6 +359,7 @@ label start:
 
     hide cairn_worried
     show cairn_happy at left
+    play sound "Nature Friend Mage Happy B.wav"
 
     c "I'd love to partake."
     c "You're correct. I do worry too much. But at least I can rest easy in that you have been alerted."
@@ -398,8 +418,8 @@ label start:
     "Shaking and coughing, Makoto stumbles backwards and flees in the opposite direction towards the main hall."
     
     hide makoto_shock
-    show makoto_worry at left, makoto_size
     scene wooden_bg with fade
+    show makoto_worry at left, makoto_size
 
     "Makoto flees to the main hall as fast as her legs will carry her, only to discover that it, too, is engulfed in flames."
     "She tries to take in a deep breath to steady herself as she navigates carefully around the flames, only to choke on the smoke."
@@ -412,7 +432,11 @@ label start:
     show makoto_shock at right, makoto_size
 
     "She tries to lunge forward as far as she can, but she's just not fast enough, and one of the wooden support beams falls on her legs."
+
+    play sound "bone_flesh_crunch_02.wav"
+
     "A shriek of pain and fear tears from Makoto's throat. She tries and fails to shrug the beams off of her."
+
     "Desperately, sobbing, Makoto digs her palms into the wooden floor in front of her, attempting to drag herself out from under the heavy beams."
     "All she manages to do is drag splinters into her palms."
     m "Please! Kamisama! Hear my prayer!"
@@ -434,12 +458,7 @@ label start:
     hide makoto_resolute
     pause 3.0
     scene makoto_death with fade 
-    pause 5.0
-    
-
-
-
-
+    pause 10.0
 
     # This ends the game.
     return
